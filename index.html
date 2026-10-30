@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тод Шилэн Хийц — Шилэн Бүтээгдэхүүн</title>
+  <meta name="description" content="Тод Шилэн Хийц — Монголын чанарын шилэн бүтээгдэхүүн. Толь, шилэн хийц, декоратив шил." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">
+      <img src="images/logo.png" alt="Тод Шилэн Хийц" />
+    </div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="Тод Шилэн Хийц лого" class="logo-img" />
+        <div class="logo-text-wrap">
+          <span class="logo-mn">ТОД ШИЛЭН ХИЙЦ</span>
+          <span class="logo-sub">Шилэн Бүтээгдэхүүн</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Нүүр</a></li>
+        <li><a href="#products">Бүтээгдэхүүн</a></li>
+        <li><a href="#about">Бидний тухай</a></li>
+        <li><a href="#gallery">Галлерей</a></li>
+        <li><a href="#contact" class="nav-cta">Захиалга</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMenu()">Нүүр</a>
+      <a href="#products" onclick="closeMenu()">Бүтээгдэхүүн</a>
+      <a href="#about" onclick="closeMenu()">Бидний тухай</a>
+      <a href="#gallery" onclick="closeMenu()">Галлерей</a>
+      <a href="#contact" onclick="closeMenu()">Захиалга</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Монголын шилдэг шилэн бүтээгдэхүүн</p>
+      <h1 class="hero-title">
+        Гоо сайхан <br/>
+        <em>шилэн</em> дизайн
+      </h1>
+      <p class="hero-desc">
+        Архитектурын шилэн хийц, декоратив толь болон 
+        өндөр чанарын шилэн бүтээгдэхүүнийг танд хүргэнэ.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-gold">Бүтээгдэхүүн үзэх</a>
+        <a href="#contact" class="btn-outline">Зөвлөгөө авах</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Доош гүйлгэ</span>
+    </div>
+    <!-- Floating product preview -->
+    <div class="hero-preview">
+      <div class="preview-card">
+        <img src="images/product-gold.jpg" alt="Алтан хүрээт шил" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num" data-target="500">0</span><span>+</span>
+        <span class="stat-lbl">Гүйцэтгэсэн захиалга</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="10">0</span><span>+</span>
+        <span class="stat-lbl">Жилийн туршлага</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="3">0</span><span></span>
+        <span class="stat-lbl">Бүтээгдэхүүний төрөл</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="100">0</span><span>%</span>
+        <span class="stat-lbl">Хэрэглэгч сэтгэл хангалуун</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Бүтээгдэхүүн</span>
+        <h2>Манай <em>шилэн хийцүүд</em></h2>
+        <p>Өндөр чанар, нарийн урчлал бүхий шилэн бүтээгдэхүүнүүд</p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product 1: Gold Mirror -->
+        <div class="product-card" id="prod-gold">
+          <div class="product-img-wrap">
+            <img src="images/product-gold.jpg" alt="Алтан хүрээт толь" class="product-img" />
+            <div class="product-overlay">
+              <button class="overlay-btn" onclick="openModal('modal-gold')">Дэлгэрэнгүй</button>
+            </div>
+            <div class="product-badge">Bestseller</div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Декоратив толь</span>
+            <h3>Алтан хүрээт толь</h3>
+            <p>Зэс алтан өнгийн хүрээ бүхий, хүрэл шилтэй premium толь. Орчин үеийн интерьерт тохиромжтой.</p>
+            <div class="product-details">
+              <span>📐 Хэмжээ: Захиалгаар</span>
+              <span>✨ Материал: Алюмин хүрээ + Хүрэл шил</span>
+            </div>
+            <a href="#contact" class="btn-gold-sm">Захиалах</a>
+          </div>
+        </div>
+
+        <!-- Product 2: Black Mirror -->
+        <div class="product-card" id="prod-black">
+          <div class="product-img-wrap">
+            <img src="images/product-black.jpg" alt="Хар хүрээт толь" class="product-img" />
+            <div class="product-overlay">
+              <button class="overlay-btn" onclick="openModal('modal-black')">Дэлгэрэнгүй</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Декоратив толь</span>
+            <h3>Хар хүрээт толь</h3>
+            <p>Хар хүрээ, хар саарал шилтэй орчин үеийн минималист дизайны толь. Гэр, оффист тохирно.</p>
+            <div class="product-details">
+              <span>📐 Хэмжээ: Захиалгаар</span>
+              <span>✨ Материал: Металл хүрээ + Хар шил</span>
+            </div>
+            <a href="#contact" class="btn-gold-sm">Захиалах</a>
+          </div>
+        </div>
+
+        <!-- Product 3: Champagne Mirror -->
+        <div class="product-card" id="prod-champ">
+          <div class="product-img-wrap">
+            <img src="images/product-champagne.jpg" alt="Шампань хүрээт толь" class="product-img" />
+            <div class="product-overlay">
+              <button class="overlay-btn" onclick="openModal('modal-champ')">Дэлгэрэнгүй</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Декоратив толь</span>
+            <h3>Шампань хүрээт толь</h3>
+            <p>Хөнгөн алтлаг шампань өнгийн хүрээтэй, тунгалаг шилтэй зөөлөн дизайны толь.</p>
+            <div class="product-details">
+              <span>📐 Хэмжээ: Захиалгаар</span>
+              <span>✨ Материал: Алюмин хүрээ + Тунгалаг шил</span>
+            </div>
+            <a href="#contact" class="btn-gold-sm">Захиалах</a>
+          </div>
+        </div>
+
+        <!-- Product 4: Textured Glass -->
+        <div class="product-card featured-card" id="prod-texture">
+          <div class="product-img-wrap">
+            <img src="images/product-texture.jpg" alt="Судалтай шил" class="product-img" />
+            <div class="product-overlay">
+              <button class="overlay-btn" onclick="openModal('modal-texture')">Дэлгэрэнгүй</button>
+            </div>
+            <div class="product-badge new-badge">Шинэ</div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">Архитектурын шил</span>
+            <h3>Судалтай архитектурын шил</h3>
+            <p>Үзэсгэлэнт давхар судалтай гадаргуу бүхий тусгай шил. Хана, таазанд суурилуулахад тохиромжтой.</p>
+            <div class="product-details">
+              <span>📐 Хэмжээ: Захиалгаар</span>
+              <span>✨ Материал: Олон давхрааны боловсруулсан шил</span>
+            </div>
+            <a href="#contact" class="btn-gold-sm">Захиалах</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-bg"></div>
+    <div class="container about-inner">
+      <div class="about-img-col">
+        <div class="about-img-stack">
+          <img src="images/product-gold.jpg" alt="Шилэн хийц" class="about-img-main" />
+          <img src="images/product-black.jpg" alt="Шилэн хийц" class="about-img-second" />
+        </div>
+      </div>
+      <div class="about-text-col">
+        <span class="eyebrow">Бидний тухай</span>
+        <h2>Чанар ба <em>урлал</em> нэгдсэн газар</h2>
+        <p class="about-lead">
+          Тод Шилэн Хийц нь Монголд шилэн бүтээгдэхүүнийг өндөр чанараар үйлдвэрлэж,
+          нийлүүлдэг мэргэшсэн компани юм.
+        </p>
+        <p>
+          Бид олон жилийн туршлагатай мэргэжлийн баг болон орчин үеийн тоног төхөөрөмжийн тусламжтайгаар 
+          гэр, оффис, зочид буудал болон арилжааны барилгуудад зориулсан тусгай шийдлүүдийг санал болгодог.
+        </p>
+        <div class="about-points">
+          <div class="apoint">
+            <div class="apoint-icon">◆</div>
+            <div>
+              <strong>Захиалгат үйлдвэрлэл</strong>
+              <p>Таны хэрэгцээнд тохируулан хийж өгнө</p>
+            </div>
+          </div>
+          <div class="apoint">
+            <div class="apoint-icon">◆</div>
+            <div>
+              <strong>Суурилуулалтын үйлчилгээ</strong>
+              <p>Мэргэжлийн баг гэртээ хүрч суурилуулна</p>
+            </div>
+          </div>
+          <div class="apoint">
+            <div class="apoint-icon">◆</div>
+            <div>
+              <strong>Баталгаат чанар</strong>
+              <p>Бүх бүтээгдэхүүнд 2 жилийн баталгаа</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-gold">Бидэнтэй холбогдох</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head light">
+        <span class="eyebrow">Галлерей</span>
+        <h2>Манай <em>ажлуудаас</em></h2>
+        <p>Бидний хийж гүйцэтгэсэн ажлуудын зарим дээжүүд</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item g-large" onclick="openLightbox('images/product-gold.jpg', 'Алтан хүрээт толь')">
+          <img src="images/product-gold.jpg" alt="Алтан толь" />
+          <div class="gallery-caption">Алтан хүрээт толь</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/product-black.jpg', 'Хар хүрээт толь')">
+          <img src="images/product-black.jpg" alt="Хар толь" />
+          <div class="gallery-caption">Хар хүрээт толь</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/product-champagne.jpg', 'Шампань хүрээт толь')">
+          <img src="images/product-champagne.jpg" alt="Шампань толь" />
+          <div class="gallery-caption">Шампань хүрээт толь</div>
+        </div>
+        <div class="gallery-item g-wide" onclick="openLightbox('images/product-texture.jpg', 'Судалтай шил')">
+          <img src="images/product-texture.jpg" alt="Судалтай шил" />
+          <div class="gallery-caption">Судалтай архитектурын шил</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Захиалга & Холбоо барих</span>
+        <h2>Манай <em>бүтээгдэхүүн</em> захиалах</h2>
+        <p>Мэргэжлийн зөвлөгөө авах эсвэл захиалга өгөхийн тулд бидэнтэй холбогдоорой</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-left">
+          <div class="cinfo">
+            <div class="cinfo-icon">📍</div>
+            <div>
+              <strong>Байршил</strong>
+              <p>Улаанбаатар хот</p>
+            </div>
+          </div>
+          <div class="cinfo">
+            <div class="cinfo-icon">📞</div>
+            <div>
+              <strong>Утас</strong>
+              <p>+976 9900-0000</p>
+            </div>
+          </div>
+          <div class="cinfo">
+            <div class="cinfo-icon">✉️</div>
+            <div>
+              <strong>И-мэйл</strong>
+              <p>info@todshilen.mn</p>
+            </div>
+          </div>
+          <div class="cinfo">
+            <div class="cinfo-icon">🕐</div>
+            <div>
+              <strong>Ажлын цаг</strong>
+              <p>Даваа–Баасан: 09:00–18:00</p>
+            </div>
+          </div>
+          <div class="contact-products-preview">
+            <p class="preview-label">Бидний бүтээгдэхүүнүүд:</p>
+            <div class="preview-imgs">
+              <img src="images/product-gold.jpg" alt="Алтан толь" />
+              <img src="images/product-black.jpg" alt="Хар толь" />
+              <img src="images/product-champagne.jpg" alt="Шампань толь" />
+              <img src="images/product-texture.jpg" alt="Судалтай шил" />
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="orderForm" onsubmit="handleOrder(event)">
+          <h3>Захиалгын маягт</h3>
+          <div class="form-row">
+            <div class="fg">
+              <label for="fname">Нэр</label>
+              <input type="text" id="fname" placeholder="Таны нэр" required />
+            </div>
+            <div class="fg">
+              <label for="fphone">Утас</label>
+              <input type="tel" id="fphone" placeholder="+976 XXXX-XXXX" required />
+            </div>
+          </div>
+          <div class="fg">
+            <label for="fproduct">Бүтээгдэхүүн сонгох</label>
+            <select id="fproduct" required>
+              <option value="" disabled selected>Бүтээгдэхүүн сонгоно уу</option>
+              <option>Алтан хүрээт толь</option>
+              <option>Хар хүрээт толь</option>
+              <option>Шампань хүрээт толь</option>
+              <option>Судалтай архитектурын шил</option>
+              <option>Захиалгат бусад хийц</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="fg">
+              <label for="fwidth">Өргөн (см)</label>
+              <input type="number" id="fwidth" placeholder="Жишээ: 80" />
+            </div>
+            <div class="fg">
+              <label for="fheight">Өндөр (см)</label>
+              <input type="number" id="fheight" placeholder="Жишээ: 100" />
+            </div>
+          </div>
+          <div class="fg">
+            <label for="fmessage">Нэмэлт тайлбар</label>
+            <textarea id="fmessage" rows="4" placeholder="Тусгай хүсэлт, нэмэлт мэдээлэл..."></textarea>
+          </div>
+          <button type="submit" class="btn-gold btn-full" id="orderBtn">
+            Захиалга илгээх →
+          </button>
+          <div class="form-success" id="orderSuccess">
+            ✅ Таны захиалга хүлээн авлаа! Бид удахгүй холбоо барина.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Тод Шилэн Хийц" class="footer-logo" />
+        <p>Монголын шилдэг шилэн бүтээгдэхүүний компани</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Навигаци</h4>
+        <a href="#home">Нүүр</a>
+        <a href="#products">Бүтээгдэхүүн</a>
+        <a href="#about">Бидний тухай</a>
+        <a href="#gallery">Галлерей</a>
+        <a href="#contact">Захиалга</a>
+      </div>
+      <div class="footer-nav">
+        <h4>Бүтээгдэхүүн</h4>
+        <a href="#products">Алтан хүрээт толь</a>
+        <a href="#products">Хар хүрээт толь</a>
+        <a href="#products">Шампань хүрээт толь</a>
+        <a href="#products">Судалтай шил</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Холбоо барих</h4>
+        <p>📞 +976 9900-0000</p>
+        <p>✉️ info@todshilen.mn</p>
+        <p>📍 Улаанбаатар хот</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Тод Шилэн Хийц. Бүх эрх хамгаалагдсан.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img src="" alt="" id="lightboxImg" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- Product Modals -->
+  <div class="modal" id="modal-gold" onclick="closeModal(event, 'modal-gold')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal(null,'modal-gold')">✕</button>
+      <img src="images/product-gold.jpg" alt="Алтан хүрээт толь" />
+      <div class="modal-info">
+        <h3>Алтан хүрээт толь</h3>
+        <p>Зэс алтан өнгийн өндөр чанарын хүрээ бүхий premium толь. Хүрэл өнгийн тусгай шилтэй, орчин үеийн болон классик интерьерт аль алинд тохиромжтой.</p>
+        <ul>
+          <li>✦ Материал: Алюмин хүрээ, электростатик будсан</li>
+          <li>✦ Шилний төрөл: Хүрэл (bronze) шил</li>
+          <li>✦ Хэмжээ: Захиалгаар хийнэ</li>
+          <li>✦ Хүргэлт: Улаанбаатар хот дотор</li>
+          <li>✦ Суурилуулалт: Багаар хийнэ</li>
+        </ul>
+        <a href="#contact" class="btn-gold" onclick="closeModal(null,'modal-gold')">Захиалах</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-black" onclick="closeModal(event, 'modal-black')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal(null,'modal-black')">✕</button>
+      <img src="images/product-black.jpg" alt="Хар хүрээт толь" />
+      <div class="modal-info">
+        <h3>Хар хүрээт толь</h3>
+        <p>Минималист хар хүрээтэй, хар саарал шилтэй орчин үеийн дизайны толь. Офис, зочид буудал, гэрт тохиромжтой.</p>
+        <ul>
+          <li>✦ Материал: Металл хүрээ, хар будсан</li>
+          <li>✦ Шилний төрөл: Тонированный (хар) шил</li>
+          <li>✦ Хэмжээ: Захиалгаар хийнэ</li>
+          <li>✦ Хүргэлт: Улаанбаатар хот дотор</li>
+          <li>✦ Суурилуулалт: Багаар хийнэ</li>
+        </ul>
+        <a href="#contact" class="btn-gold" onclick="closeModal(null,'modal-black')">Захиалах</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-champ" onclick="closeModal(event, 'modal-champ')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal(null,'modal-champ')">✕</button>
+      <img src="images/product-champagne.jpg" alt="Шампань хүрээт толь" />
+      <div class="modal-info">
+        <h3>Шампань хүрээт толь</h3>
+        <p>Зөөлөн алтлаг шампань өнгийн хүрээтэй, тунгалаг шилтэй гоёмсог толь. Унтлагын өрөө, угаалгын өрөөнд тохиромжтой.</p>
+        <ul>
+          <li>✦ Материал: Алюмин хүрээ, шампань өнгийн</li>
+          <li>✦ Шилний төрөл: Тунгалаг шил</li>
+          <li>✦ Хэмжээ: Захиалгаар хийнэ</li>
+          <li>✦ Хүргэлт: Улаанбаатар хот дотор</li>
+          <li>✦ Суурилуулалт: Багаар хийнэ</li>
+        </ul>
+        <a href="#contact" class="btn-gold" onclick="closeModal(null,'modal-champ')">Захиалах</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-texture" onclick="closeModal(event, 'modal-texture')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal(null,'modal-texture')">✕</button>
+      <img src="images/product-texture.jpg" alt="Судалтай шил" />
+      <div class="modal-info">
+        <h3>Судалтай архитектурын шил</h3>
+        <p>Онцгой боловсруулалттай давхар судалтай гадаргуу бүхий архитектурын тусгай шил. Хана, таазны декор, хуваалтанд хэрэглэнэ.</p>
+        <ul>
+          <li>✦ Материал: Олон давхрааны боловсруулсан шил</li>
+          <li>✦ Гадаргуу: Судалтай (ribbed/fluted) дизайн</li>
+          <li>✦ Хэмжээ: Захиалгаар хийнэ</li>
+          <li>✦ Хүргэлт: Улаанбаатар хот дотор</li>
+          <li>✦ Суурилуулалт: Багаар хийнэ</li>
+        </ul>
+        <a href="#contact" class="btn-gold" onclick="closeModal(null,'modal-texture')">Захиалах</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
