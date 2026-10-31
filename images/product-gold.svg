@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Gold mirror</title>
+  <desc id="desc">Gold framed decorative mirror</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a120b"/>
+      <stop offset="100%" stop-color="#090909"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7df9d"/>
+      <stop offset="40%" stop-color="#d9ad5e"/>
+      <stop offset="100%" stop-color="#9e7a2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <rect x="110" y="110" width="580" height="580" rx="26" fill="url(#gold)"/>
+  <rect x="170" y="170" width="460" height="460" rx="18" fill="rgba(255,255,255,0.28)"/>
+  <path d="M185 238C270 180 420 175 520 240" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M220 548C310 590 475 592 572 524" fill="none" stroke="rgba(115,90,44,0.7)" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="570" cy="218" r="42" fill="rgba(255,255,255,0.20)"/>
+  <path d="M258 260L390 520L522 260" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

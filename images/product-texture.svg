@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Textured glass</title>
+  <desc id="desc">Architectural textured glass panel</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#121519"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#edf1f5" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#b7bfcb" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f4f6f9" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <rect x="100" y="100" width="600" height="600" rx="14" fill="none" stroke="rgba(199,169,102,0.8)" stroke-width="8"/>
+  <rect x="155" y="155" width="490" height="490" fill="url(#glass)" opacity="0.9"/>
+  <g stroke="rgba(255,255,255,0.25)" stroke-width="6">
+    <path d="M155 240H645"/>
+    <path d="M155 325H645"/>
+    <path d="M155 410H645"/>
+    <path d="M155 495H645"/>
+    <path d="M155 580H645"/>
+    <path d="M240 155V645"/>
+    <path d="M335 155V645"/>
+    <path d="M430 155V645"/>
+    <path d="M525 155V645"/>
+  </g>
+</svg>

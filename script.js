@@ -55,7 +55,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 // ---- Scroll Reveal ----
 const revealEls = document.querySelectorAll(
-  '.product-card, .apoint, .cinfo, .gallery-item, .stat, .about-img-main, .about-img-second, .section-head, .hero-eyebrow, .hero-title, .hero-desc, .hero-actions'
+  '.product-card, .apoint, .gallery-item, .stat, .about-img-main, .about-img-second, .section-head, .hero-eyebrow, .hero-title, .hero-desc, .hero-actions'
 );
 revealEls.forEach(el => el.classList.add('reveal'));
 
@@ -71,34 +71,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 revealEls.forEach(el => observer.observe(el));
-
-// ---- Counter Animation ----
-function animateCounter(el) {
-  const target = parseInt(el.dataset.target);
-  const duration = 1800;
-  const step = target / (duration / 16);
-  let current = 0;
-  const timer = setInterval(() => {
-    current += step;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
-    }
-    el.textContent = Math.floor(current);
-  }, 16);
-}
-
-const statsObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      document.querySelectorAll('.stat-num').forEach(animateCounter);
-      statsObserver.disconnect();
-    }
-  });
-}, { threshold: 0.5 });
-
-const statsBar = document.querySelector('.stats-bar');
-if (statsBar) statsObserver.observe(statsBar);
 
 // ---- Active Nav Link ----
 const sections = document.querySelectorAll('section[id]');
@@ -146,24 +118,6 @@ function closeModal(e, id) {
   if (e && e.target !== document.getElementById(id)) return;
   document.getElementById(id).classList.remove('open');
   document.body.style.overflow = '';
-}
-
-// ---- Contact Form ----
-function handleOrder(e) {
-  e.preventDefault();
-  const btn = document.getElementById('orderBtn');
-  btn.textContent = 'Илгээж байна...';
-  btn.disabled = true;
-
-  setTimeout(() => {
-    btn.textContent = 'Захиалга илгээх →';
-    btn.disabled = false;
-    document.getElementById('orderSuccess').classList.add('show');
-    document.getElementById('orderForm').reset();
-    setTimeout(() => {
-      document.getElementById('orderSuccess').classList.remove('show');
-    }, 5000);
-  }, 1500);
 }
 
 // ---- Parallax Hero ----

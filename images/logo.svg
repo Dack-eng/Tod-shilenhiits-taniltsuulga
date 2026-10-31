@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Tod Shilen Hiits logo</title>
+  <desc id="desc">Golden geometric mirror monogram</desc>
+  <defs>
+    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5ddb0"/>
+      <stop offset="30%" stop-color="#d4b15d"/>
+      <stop offset="60%" stop-color="#b88c2f"/>
+      <stop offset="100%" stop-color="#7d5f1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="#0d0d0d"/>
+  <rect x="30" y="30" width="180" height="180" rx="26" fill="none" stroke="url(#gold)" stroke-width="5"/>
+  <rect x="52" y="52" width="136" height="136" rx="18" fill="rgba(255,255,255,0.08)"/>
+  <path d="M73 79l28 0 22 52 24-52 26 0-37 86-27 0-36-86zm50 0l34 0-17 38-17-38z" fill="url(#gold)"/>
+  <path d="M106 94l16 0 18 42-19 0-15-42z" fill="#f1d890" opacity="0.8"/>
+</svg>

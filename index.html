@@ -15,7 +15,7 @@
   <!-- Loader -->
   <div class="loader" id="loader">
     <div class="loader-logo">
-      <img src="images/logo.png" alt="Тод Шилэн Хийц" />
+      <img src="images/logo.svg" alt="Тод Шилэн Хийц" />
     </div>
     <div class="loader-bar"><div class="loader-progress"></div></div>
   </div>
@@ -24,7 +24,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#home" class="nav-logo">
-        <img src="images/logo.png" alt="Тод Шилэн Хийц лого" class="logo-img" />
+        <img src="images/logo.svg" alt="Тод Шилэн Хийц лого" class="logo-img" />
         <div class="logo-text-wrap">
           <span class="logo-mn">ТОД ШИЛЭН ХИЙЦ</span>
           <span class="logo-sub">Шилэн Бүтээгдэхүүн</span>
@@ -33,9 +33,9 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Нүүр</a></li>
         <li><a href="#products">Бүтээгдэхүүн</a></li>
-        <li><a href="#about">Бидний тухай</a></li>
+        <li><a href="#about">Танилцуулга</a></li>
         <li><a href="#gallery">Галлерей</a></li>
-        <li><a href="#contact" class="nav-cta">Захиалга</a></li>
+        <li><a href="#gallery" class="nav-cta">Загварууд</a></li>
       </ul>
       <button class="hamburger" id="hamburger" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -44,9 +44,9 @@
     <div class="mobile-menu" id="mobileMenu">
       <a href="#home" onclick="closeMenu()">Нүүр</a>
       <a href="#products" onclick="closeMenu()">Бүтээгдэхүүн</a>
-      <a href="#about" onclick="closeMenu()">Бидний тухай</a>
+      <a href="#about" onclick="closeMenu()">Танилцуулга</a>
       <a href="#gallery" onclick="closeMenu()">Галлерей</a>
-      <a href="#contact" onclick="closeMenu()">Захиалга</a>
+      <a href="#gallery" onclick="closeMenu()">Загварууд</a>
     </div>
   </nav>
 
@@ -56,18 +56,18 @@
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Монголын шилдэг шилэн бүтээгдэхүүн</p>
+      <p class="hero-eyebrow">Толь, шилэн хийцийн загварын танилцуулга</p>
       <h1 class="hero-title">
         Гоо сайхан <br/>
         <em>шилэн</em> дизайн
       </h1>
       <p class="hero-desc">
-        Архитектурын шилэн хийц, декоратив толь болон 
-        өндөр чанарын шилэн бүтээгдэхүүнийг танд хүргэнэ.
+        Декоратив толь, өнгөт болон хээтэй шилний төрлүүдийг зураг, тайлбартай
+        үзэж, өөрийн орон зайдаа тохирох загварын санаа аваарай.
       </p>
       <div class="hero-actions">
-        <a href="#products" class="btn-gold">Бүтээгдэхүүн үзэх</a>
-        <a href="#contact" class="btn-outline">Зөвлөгөө авах</a>
+        <a href="#gallery" class="btn-gold">Загварууд үзэх</a>
+        <a href="#about" class="btn-outline">Танилцуулга унших</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -77,32 +77,32 @@
     <!-- Floating product preview -->
     <div class="hero-preview">
       <div class="preview-card">
-        <img src="images/product-gold.jpg" alt="Алтан хүрээт шил" />
+        <img src="images/mirror-gold.jpg" alt="Алтан хүрээт шил" />
       </div>
     </div>
   </section>
 
-  <!-- Stats -->
+  <!-- Showcase categories -->
   <section class="stats-bar">
     <div class="stats-inner">
       <div class="stat">
-        <span class="stat-num" data-target="500">0</span><span>+</span>
-        <span class="stat-lbl">Гүйцэтгэсэн захиалга</span>
+        <span class="stat-num">Толь</span>
+        <span class="stat-lbl">Хүрээтэй болон интерьерийн загвар</span>
       </div>
       <div class="stat-sep"></div>
       <div class="stat">
-        <span class="stat-num" data-target="10">0</span><span>+</span>
-        <span class="stat-lbl">Жилийн туршлага</span>
+        <span class="stat-num">Өнгөт</span>
+        <span class="stat-lbl">Хар, цэнхэр, хүрэл өнгийн шил</span>
       </div>
       <div class="stat-sep"></div>
       <div class="stat">
-        <span class="stat-num" data-target="3">0</span><span></span>
-        <span class="stat-lbl">Бүтээгдэхүүний төрөл</span>
+        <span class="stat-num">Хээтэй</span>
+        <span class="stat-lbl">Судалтай шилэн гадаргуу</span>
       </div>
       <div class="stat-sep"></div>
       <div class="stat">
-        <span class="stat-num" data-target="100">0</span><span>%</span>
-        <span class="stat-lbl">Хэрэглэгч сэтгэл хангалуун</span>
+        <span class="stat-num">Интерьер</span>
+        <span class="stat-lbl">Өрөөнд байрлуулах санаанууд</span>
       </div>
     </div>
   </section>
@@ -111,9 +111,9 @@
   <section class="products" id="products">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Бүтээгдэхүүн</span>
-        <h2>Манай <em>шилэн хийцүүд</em></h2>
-        <p>Өндөр чанар, нарийн урчлал бүхий шилэн бүтээгдэхүүнүүд</p>
+        <span class="eyebrow">Шилэн хийцийн төрлүүд</span>
+        <h2>Толь ба шилний <em>загварууд</em></h2>
+        <p>Өнгө, хүрээ болон гадаргууны ялгааг харьцуулж үзээрэй</p>
       </div>
 
       <div class="products-grid">
@@ -121,28 +121,26 @@
         <!-- Product 1: Gold Mirror -->
         <div class="product-card" id="prod-gold">
           <div class="product-img-wrap">
-            <img src="images/product-gold.jpg" alt="Алтан хүрээт толь" class="product-img" />
+            <img src="images/mirror-gold.jpg" alt="Алтан хүрээт толь" class="product-img" />
             <div class="product-overlay">
               <button class="overlay-btn" onclick="openModal('modal-gold')">Дэлгэрэнгүй</button>
             </div>
-            <div class="product-badge">Bestseller</div>
           </div>
           <div class="product-info">
             <span class="product-cat">Декоратив толь</span>
             <h3>Алтан хүрээт толь</h3>
-            <p>Зэс алтан өнгийн хүрээ бүхий, хүрэл шилтэй premium толь. Орчин үеийн интерьерт тохиромжтой.</p>
+            <p>Алтан шаргал хүрээ, дулаан хүрэн туяатай толин гадаргууг хослуулсан загвар. Зочны өрөө, унтлагын өрөөний дулаан өнгийн интерьерт зохицно.</p>
             <div class="product-details">
-              <span>📐 Хэмжээ: Захиалгаар</span>
-              <span>✨ Материал: Алюмин хүрээ + Хүрэл шил</span>
+              <span>Өнгө: Алтан шаргал хүрээ, хүрэн туяатай толь</span>
+              <span>Хэв маяг: Дулаан, сонгодог</span>
             </div>
-            <a href="#contact" class="btn-gold-sm">Захиалах</a>
           </div>
         </div>
 
         <!-- Product 2: Black Mirror -->
         <div class="product-card" id="prod-black">
           <div class="product-img-wrap">
-            <img src="images/product-black.jpg" alt="Хар хүрээт толь" class="product-img" />
+            <img src="images/mirror-black.jpg" alt="Хар хүрээт толь" class="product-img" />
             <div class="product-overlay">
               <button class="overlay-btn" onclick="openModal('modal-black')">Дэлгэрэнгүй</button>
             </div>
@@ -150,19 +148,18 @@
           <div class="product-info">
             <span class="product-cat">Декоратив толь</span>
             <h3>Хар хүрээт толь</h3>
-            <p>Хар хүрээ, хар саарал шилтэй орчин үеийн минималист дизайны толь. Гэр, оффист тохирно.</p>
+            <p>Нарийн хар хүрээ болон саарал толин гадаргуу нь цэвэрхэн, минимал төрх бүрдүүлнэ. Цайвар ханатай орон зайд тод ялгарна.</p>
             <div class="product-details">
-              <span>📐 Хэмжээ: Захиалгаар</span>
-              <span>✨ Материал: Металл хүрээ + Хар шил</span>
+              <span>Өнгө: Хар хүрээ, саарал шил</span>
+              <span>Хэв маяг: Минимал, орчин үеийн</span>
             </div>
-            <a href="#contact" class="btn-gold-sm">Захиалах</a>
           </div>
         </div>
 
         <!-- Product 3: Champagne Mirror -->
         <div class="product-card" id="prod-champ">
           <div class="product-img-wrap">
-            <img src="images/product-champagne.jpg" alt="Шампань хүрээт толь" class="product-img" />
+            <img src="images/mirror-champagne.jpg" alt="Шампань хүрээт толь" class="product-img" />
             <div class="product-overlay">
               <button class="overlay-btn" onclick="openModal('modal-champ')">Дэлгэрэнгүй</button>
             </div>
@@ -170,33 +167,30 @@
           <div class="product-info">
             <span class="product-cat">Декоратив толь</span>
             <h3>Шампань хүрээт толь</h3>
-            <p>Хөнгөн алтлаг шампань өнгийн хүрээтэй, тунгалаг шилтэй зөөлөн дизайны толь.</p>
+            <p>Цайвар шампань хүрээ нь толины загварт зөөлөн, дулаан өнгө нэмнэ. Модон болон саармаг өнгийн тавилгатай хослуулахад зохимжтой.</p>
             <div class="product-details">
-              <span>📐 Хэмжээ: Захиалгаар</span>
-              <span>✨ Материал: Алюмин хүрээ + Тунгалаг шил</span>
+              <span>Өнгө: Шампань буюу цайвар алтлаг</span>
+              <span>Хэв маяг: Зөөлөн, дулаан</span>
             </div>
-            <a href="#contact" class="btn-gold-sm">Захиалах</a>
           </div>
         </div>
 
         <!-- Product 4: Textured Glass -->
         <div class="product-card featured-card" id="prod-texture">
           <div class="product-img-wrap">
-            <img src="images/product-texture.jpg" alt="Судалтай шил" class="product-img" />
+            <img src="images/glass-ribbed-cream.jpg" alt="Цайвар судалтай шил" class="product-img" />
             <div class="product-overlay">
               <button class="overlay-btn" onclick="openModal('modal-texture')">Дэлгэрэнгүй</button>
             </div>
-            <div class="product-badge new-badge">Шинэ</div>
           </div>
           <div class="product-info">
             <span class="product-cat">Архитектурын шил</span>
             <h3>Судалтай архитектурын шил</h3>
-            <p>Үзэсгэлэнт давхар судалтай гадаргуу бүхий тусгай шил. Хана, таазанд суурилуулахад тохиромжтой.</p>
+            <p>Нарийн хөндлөн судал нь гадаргууд хэмнэл, бүтэц оруулна. Хаалга, таславч болон тавилгын шилэн хэсэгт ашиглаж болох загварын санаа.</p>
             <div class="product-details">
-              <span>📐 Хэмжээ: Захиалгаар</span>
-              <span>✨ Материал: Олон давхрааны боловсруулсан шил</span>
+              <span>Өнгө: Цайвар, бараан сонголт</span>
+              <span>Хээ: Хөндлөн судал</span>
             </div>
-            <a href="#contact" class="btn-gold-sm">Захиалах</a>
           </div>
         </div>
 
@@ -210,45 +204,42 @@
     <div class="container about-inner">
       <div class="about-img-col">
         <div class="about-img-stack">
-          <img src="images/product-gold.jpg" alt="Шилэн хийц" class="about-img-main" />
-          <img src="images/product-black.jpg" alt="Шилэн хийц" class="about-img-second" />
+          <img src="images/mirror-organic-installed.jpg" alt="Гэрэлтүүлэгтэй органик хэлбэрийн толь" class="about-img-main" loading="lazy" decoding="async" />
+          <img src="images/mirror-arch-installed.jpg" alt="Хар хүрээтэй нуман толь" class="about-img-second" loading="lazy" decoding="async" />
         </div>
       </div>
       <div class="about-text-col">
-        <span class="eyebrow">Бидний тухай</span>
-        <h2>Чанар ба <em>урлал</em> нэгдсэн газар</h2>
+        <span class="eyebrow">Танилцуулга</span>
+        <h2>Шилэн хийцийн <em>загварын санаа</em></h2>
         <p class="about-lead">
-          Тод Шилэн Хийц нь Монголд шилэн бүтээгдэхүүнийг өндөр чанараар үйлдвэрлэж,
-          нийлүүлдэг мэргэшсэн компани юм.
+          Энэ хуудас нь толь, өнгөт шил болон судалтай шилэн хийцийн төрлүүдийг танилцуулах үзүүлэн юм.
         </p>
         <p>
-          Бид олон жилийн туршлагатай мэргэжлийн баг болон орчин үеийн тоног төхөөрөмжийн тусламжтайгаар 
-          гэр, оффис, зочид буудал болон арилжааны барилгуудад зориулсан тусгай шийдлүүдийг санал болгодог.
+          Зураг бүрийн доорх тайлбараас өнгө, хэлбэр, гадаргуугийн ялгааг харьцуулж үзээрэй. Зургууд нь санаа авах жишээ бөгөөд бодит өнгө нь дэлгэц, гэрэлтүүлгээс шалтгаалан өөр харагдаж болно.
         </p>
         <div class="about-points">
           <div class="apoint">
             <div class="apoint-icon">◆</div>
             <div>
-              <strong>Захиалгат үйлдвэрлэл</strong>
-              <p>Таны хэрэгцээнд тохируулан хийж өгнө</p>
+              <strong>Толины загварууд</strong>
+              <p>Алтан, хар, шампань хүрээтэй болон интерьерийн жишээ</p>
             </div>
           </div>
           <div class="apoint">
             <div class="apoint-icon">◆</div>
             <div>
-              <strong>Суурилуулалтын үйлчилгээ</strong>
-              <p>Мэргэжлийн баг гэртээ хүрч суурилуулна</p>
+              <strong>Өнгөт шил</strong>
+              <p>Хар, цэнхэр, хүрэл болон цайвар өнгөний жишээ</p>
             </div>
           </div>
           <div class="apoint">
             <div class="apoint-icon">◆</div>
             <div>
-              <strong>Баталгаат чанар</strong>
-              <p>Бүх бүтээгдэхүүнд 2 жилийн баталгаа</p>
+              <strong>Хээтэй гадаргуу</strong>
+              <p>Цайвар, бараан судалтай шилэн хийцийн санаанууд</p>
             </div>
           </div>
         </div>
-        <a href="#contact" class="btn-gold">Бидэнтэй холбогдох</a>
       </div>
     </div>
   </section>
@@ -257,124 +248,65 @@
   <section class="gallery" id="gallery">
     <div class="container">
       <div class="section-head light">
-        <span class="eyebrow">Галлерей</span>
-        <h2>Манай <em>ажлуудаас</em></h2>
-        <p>Бидний хийж гүйцэтгэсэн ажлуудын зарим дээжүүд</p>
+        <span class="eyebrow">Загварын үзүүлэн</span>
+        <h2>Хийж болох <em>загварууд</em></h2>
+        <p>Бүх загварын зургийг тайлбартай нь үзэж, томруулан харах боломжтой</p>
       </div>
       <div class="gallery-grid" id="galleryGrid">
-        <div class="gallery-item g-large" onclick="openLightbox('images/product-gold.jpg', 'Алтан хүрээт толь')">
-          <img src="images/product-gold.jpg" alt="Алтан толь" />
-          <div class="gallery-caption">Алтан хүрээт толь</div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox('images/product-black.jpg', 'Хар хүрээт толь')">
-          <img src="images/product-black.jpg" alt="Хар толь" />
-          <div class="gallery-caption">Хар хүрээт толь</div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox('images/product-champagne.jpg', 'Шампань хүрээт толь')">
-          <img src="images/product-champagne.jpg" alt="Шампань толь" />
-          <div class="gallery-caption">Шампань хүрээт толь</div>
-        </div>
-        <div class="gallery-item g-wide" onclick="openLightbox('images/product-texture.jpg', 'Судалтай шил')">
-          <img src="images/product-texture.jpg" alt="Судалтай шил" />
-          <div class="gallery-caption">Судалтай архитектурын шил</div>
-        </div>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-gold.jpg', 'Алтан хүрээтэй хүрэл толь')" aria-label="Алтан хүрээтэй хүрэл толийг томруулж харах">
+          <img src="images/mirror-gold.jpg" alt="Алтан хүрээтэй хүрэл толь" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Алтан хүрээтэй хүрэл толь</strong><span>Дулаан хүрэн тусгалтай толийг алтан шаргал хүрээ хүрээлнэ. Зөөлөн, сонгодог өнгө аястай интерьерийн санаа.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-black.jpg', 'Хар хүрээтэй саарал толь')" aria-label="Хар хүрээтэй саарал толийг томруулж харах">
+          <img src="images/mirror-black.jpg" alt="Хар хүрээтэй саарал толь" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Хар хүрээтэй саарал толь</strong><span>Нарийн хар хүрээ, бараан саарал шилтэй минимал загвар. Орчин үеийн, цэгцтэй интерьерийн өнгө төрхийг тодруулна.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-champagne.jpg', 'Цайвар шампань хүрээтэй толь')" aria-label="Шампань хүрээтэй толийг томруулж харах">
+          <img src="images/mirror-champagne.jpg" alt="Цайвар шампань хүрээтэй толь" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Шампань хүрээтэй толь</strong><span>Цайвар, дулаан өнгийн хүрээтэй энгийн дөрвөлжин хэлбэр. Цагаан болон байгалийн өнгийн тавилгатай зохицох жишээ.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/glass-ribbed-cream.jpg', 'Цайвар судалтай шил')" aria-label="Цайвар судалтай шилийг томруулж харах">
+          <img src="images/glass-ribbed-cream.jpg" alt="Цайвар хөндлөн судалтай шил" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Цайвар судалтай шил</strong><span>Нарийн хөндлөн хээтэй цайвар гадаргуу нь шилэнд хэмнэл, бүтэц нэмнэ. Хуваалт болон тавилгын хийцэд ашиглах санаа.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/glass-black.jpg', 'Хар өнгийн шил')" aria-label="Хар өнгийн шилийг томруулж харах">
+          <img src="images/glass-black.jpg" alt="Хар өнгийн гөлгөр шил" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Хар өнгийн шил</strong><span>Гөлгөр, гүн хар гадаргуу нь гэрэл болон орчны дүрсийг тод тусгана. Тавилга, хаалга, интерьерийн акцент хэсэгт тохирох санаа.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/glass-blue.jpg', 'Цэнхэр өнгийн шил')" aria-label="Цэнхэр өнгийн шилийг томруулж харах">
+          <img src="images/glass-blue.jpg" alt="Цэнхэр өнгийн гөлгөр шил" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Цэнхэр өнгийн шил</strong><span>Хүйтэн цэнхэр туяатай гөлгөр гадаргуу. Саарал, цагаан өнгийн орчинд өнгөний ялгарал үүсгэх загварын жишээ.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/glass-ribbed-charcoal.jpg', 'Бараан судалтай шил')" aria-label="Бараан судалтай шилийг томруулж харах">
+          <img src="images/glass-ribbed-charcoal.jpg" alt="Бараан саарал хөндлөн судалтай шил" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Бараан судалтай шил</strong><span>Бараан саарал өнгө, хөндлөн хээ нь гадаргууд илүү тод бүтэц өгнө. Цайвар судалтай хувилбартай харьцуулж үзэхэд тохиромжтой.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-detail-bronze.jpg', 'Хүрэл туяатай толины шил')" aria-label="Хүрэл туяатай толины шилний ойрын зургийг томруулж харах">
+          <img src="images/mirror-detail-bronze.jpg" alt="Хүрэл туяатай толины шилний ойрын зураг" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Хүрэл туяатай шил</strong><span>Хүрэн, зэс туяа болон гэрлийн тусгалыг ойроос харуулсан жишээ. Алтан хүрээтэй загварын өнгөний сонголттой хосолно.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-detail-black.jpg', 'Бараан саарал толины шил')" aria-label="Бараан саарал толины шилний ойрын зургийг томруулж харах">
+          <img src="images/mirror-detail-black.jpg" alt="Бараан саарал толины шилний ойрын зураг" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Бараан саарал шил</strong><span>Саарал туяатай тусгалын ойрын зураг. Хар хүрээтэй толь болон минимал интерьерийн өнгө төрхийг харуулна.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-detail-clear.jpg', 'Цайвар тусгалтай толины шил')" aria-label="Цайвар тусгалтай шилийг томруулж харах">
+          <img src="images/mirror-detail-clear.jpg" alt="Цайвар тусгалтай толины шилний ойрын зураг" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Цайвар тусгалтай шил</strong><span>Цайвар, зөөлөн тусгалтай гадаргууны жишээ. Шампань өнгийн хүрээтэй тольтой хэрхэн зохицохыг харуулна.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-organic-installed.jpg', 'Арын гэрэлтэй органик хэлбэрийн толь')" aria-label="Арын гэрэлтэй органик хэлбэрийн толийг томруулж харах">
+          <img src="images/mirror-organic-installed.jpg" alt="Интерьер дэх арын гэрэлтэй органик хэлбэрийн толь" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Арын гэрэлтэй органик толь</strong><span>Жигд бус, зөөлөн хүрээтэй том толь болон арын гэрэлтүүлгийг интерьер дотор харуулсан санаа. Ханын гол хэсэгт онцгой шийдэл болно.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-arch-installed.jpg', 'Хар хүрээтэй нуман толь')" aria-label="Хар хүрээтэй нуман толийг томруулж харах">
+          <img src="images/mirror-arch-installed.jpg" alt="Үүдний хэсэгт байрлуулсан хар хүрээтэй нуман толь" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Хар хүрээтэй нуман толь</strong><span>Дээд хэсэг нь бөөрөнхий, урт хэлбэртэй толь. Нарийн хар хүрээ нь үүдний болон коридорын интерьерт тод хүрээ үүсгэнэ.</span></span>
+        </button>
+        <button class="gallery-item" type="button" onclick="openLightbox('images/mirror-full-length-installed.jpg', 'Шампань хүрээтэй урт толь')" aria-label="Шампань хүрээтэй урт толийг томруулж харах">
+          <img src="images/mirror-full-length-installed.jpg" alt="Интерьер дэх шампань хүрээтэй бүтэн урт толь" loading="lazy" decoding="async" />
+          <span class="gallery-caption"><strong>Шампань хүрээтэй урт толь</strong><span>Бүтэн бие харах урт хэлбэр, нарийн цайвар алтлаг хүрээтэй загвар. Өрөөний хананд босоо байрлуулах интерьерийн санаа.</span></span>
+        </button>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Захиалга & Холбоо барих</span>
-        <h2>Манай <em>бүтээгдэхүүн</em> захиалах</h2>
-        <p>Мэргэжлийн зөвлөгөө авах эсвэл захиалга өгөхийн тулд бидэнтэй холбогдоорой</p>
-      </div>
-      <div class="contact-wrap">
-        <div class="contact-left">
-          <div class="cinfo">
-            <div class="cinfo-icon">📍</div>
-            <div>
-              <strong>Байршил</strong>
-              <p>Улаанбаатар хот</p>
-            </div>
-          </div>
-          <div class="cinfo">
-            <div class="cinfo-icon">📞</div>
-            <div>
-              <strong>Утас</strong>
-              <p>+976 9900-0000</p>
-            </div>
-          </div>
-          <div class="cinfo">
-            <div class="cinfo-icon">✉️</div>
-            <div>
-              <strong>И-мэйл</strong>
-              <p>info@todshilen.mn</p>
-            </div>
-          </div>
-          <div class="cinfo">
-            <div class="cinfo-icon">🕐</div>
-            <div>
-              <strong>Ажлын цаг</strong>
-              <p>Даваа–Баасан: 09:00–18:00</p>
-            </div>
-          </div>
-          <div class="contact-products-preview">
-            <p class="preview-label">Бидний бүтээгдэхүүнүүд:</p>
-            <div class="preview-imgs">
-              <img src="images/product-gold.jpg" alt="Алтан толь" />
-              <img src="images/product-black.jpg" alt="Хар толь" />
-              <img src="images/product-champagne.jpg" alt="Шампань толь" />
-              <img src="images/product-texture.jpg" alt="Судалтай шил" />
-            </div>
-          </div>
-        </div>
-        <form class="contact-form" id="orderForm" onsubmit="handleOrder(event)">
-          <h3>Захиалгын маягт</h3>
-          <div class="form-row">
-            <div class="fg">
-              <label for="fname">Нэр</label>
-              <input type="text" id="fname" placeholder="Таны нэр" required />
-            </div>
-            <div class="fg">
-              <label for="fphone">Утас</label>
-              <input type="tel" id="fphone" placeholder="+976 XXXX-XXXX" required />
-            </div>
-          </div>
-          <div class="fg">
-            <label for="fproduct">Бүтээгдэхүүн сонгох</label>
-            <select id="fproduct" required>
-              <option value="" disabled selected>Бүтээгдэхүүн сонгоно уу</option>
-              <option>Алтан хүрээт толь</option>
-              <option>Хар хүрээт толь</option>
-              <option>Шампань хүрээт толь</option>
-              <option>Судалтай архитектурын шил</option>
-              <option>Захиалгат бусад хийц</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <div class="fg">
-              <label for="fwidth">Өргөн (см)</label>
-              <input type="number" id="fwidth" placeholder="Жишээ: 80" />
-            </div>
-            <div class="fg">
-              <label for="fheight">Өндөр (см)</label>
-              <input type="number" id="fheight" placeholder="Жишээ: 100" />
-            </div>
-          </div>
-          <div class="fg">
-            <label for="fmessage">Нэмэлт тайлбар</label>
-            <textarea id="fmessage" rows="4" placeholder="Тусгай хүсэлт, нэмэлт мэдээлэл..."></textarea>
-          </div>
-          <button type="submit" class="btn-gold btn-full" id="orderBtn">
-            Захиалга илгээх →
-          </button>
-          <div class="form-success" id="orderSuccess">
-            ✅ Таны захиалга хүлээн авлаа! Бид удахгүй холбоо барина.
-          </div>
-        </form>
-      </div>
+      <p class="gallery-note">Эдгээр зураг нь загварын жишээ болно. Өнгө, тусгал нь дэлгэц болон орчны гэрлээс шалтгаалан өөр харагдаж болно.</p>
     </div>
   </section>
 
@@ -382,40 +314,39 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="images/logo.png" alt="Тод Шилэн Хийц" class="footer-logo" />
-        <p>Монголын шилдэг шилэн бүтээгдэхүүний компани</p>
+        <img src="images/logo.svg" alt="Тод Шилэн Хийц" class="footer-logo" />
+        <p>Толь болон шилэн хийцийн загварын танилцуулга.</p>
       </div>
       <div class="footer-nav">
-        <h4>Навигаци</h4>
+        <h4>Хэсгүүд</h4>
         <a href="#home">Нүүр</a>
         <a href="#products">Бүтээгдэхүүн</a>
-        <a href="#about">Бидний тухай</a>
+        <a href="#about">Танилцуулга</a>
         <a href="#gallery">Галлерей</a>
-        <a href="#contact">Захиалга</a>
+        <a href="#gallery">Загварууд</a>
       </div>
       <div class="footer-nav">
-        <h4>Бүтээгдэхүүн</h4>
+        <h4>Төрөл</h4>
         <a href="#products">Алтан хүрээт толь</a>
         <a href="#products">Хар хүрээт толь</a>
         <a href="#products">Шампань хүрээт толь</a>
         <a href="#products">Судалтай шил</a>
       </div>
-      <div class="footer-contact">
-        <h4>Холбоо барих</h4>
-        <p>📞 +976 9900-0000</p>
-        <p>✉️ info@todshilen.mn</p>
-        <p>📍 Улаанбаатар хот</p>
+      <div class="footer-note">
+        <h4>Зургийн тухай</h4>
+        <p>Загварын жишээнүүдийг томруулж үзэж болно.</p>
+        <p>Бодит өнгө нь орчны гэрлээс хамаарч өөр харагдаж болно.</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 Тод Шилэн Хийц. Бүх эрх хамгаалагдсан.</p>
+      <p>Тод Шилэн Хийц — шилэн хийцийн загварын танилцуулга</p>
     </div>
   </footer>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-    <img src="" alt="" id="lightboxImg" />
+    <img src="images/logo.svg" alt="" id="lightboxImg" />
     <p id="lightboxCaption"></p>
   </div>
 
@@ -423,18 +354,15 @@
   <div class="modal" id="modal-gold" onclick="closeModal(event, 'modal-gold')">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal(null,'modal-gold')">✕</button>
-      <img src="images/product-gold.jpg" alt="Алтан хүрээт толь" />
+      <img src="images/mirror-gold.jpg" alt="Алтан хүрээт толь" />
       <div class="modal-info">
         <h3>Алтан хүрээт толь</h3>
-        <p>Зэс алтан өнгийн өндөр чанарын хүрээ бүхий premium толь. Хүрэл өнгийн тусгай шилтэй, орчин үеийн болон классик интерьерт аль алинд тохиромжтой.</p>
+        <p>Алтан шаргал хүрээ болон дулаан хүрэн туяатай толин гадаргуутай загвар. Сонгодог болон орчин үеийн интерьерийн аль алинд өнгөний дулаан уур амьсгал нэмнэ.</p>
         <ul>
-          <li>✦ Материал: Алюмин хүрээ, электростатик будсан</li>
-          <li>✦ Шилний төрөл: Хүрэл (bronze) шил</li>
-          <li>✦ Хэмжээ: Захиалгаар хийнэ</li>
-          <li>✦ Хүргэлт: Улаанбаатар хот дотор</li>
-          <li>✦ Суурилуулалт: Багаар хийнэ</li>
+          <li>✦ Харагдах өнгө: Алтан шаргал хүрээ, хүрэл туяатай толь</li>
+          <li>✦ Загвар: Дөрвөлжин, хүрээтэй</li>
+          <li>✦ Томруулж үзэхийн тулд зургийг дарна уу</li>
         </ul>
-        <a href="#contact" class="btn-gold" onclick="closeModal(null,'modal-gold')">Захиалах</a>
       </div>
     </div>
   </div>
@@ -442,18 +370,15 @@
   <div class="modal" id="modal-black" onclick="closeModal(event, 'modal-black')">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal(null,'modal-black')">✕</button>
-      <img src="images/product-black.jpg" alt="Хар хүрээт толь" />
+      <img src="images/mirror-black.jpg" alt="Хар хүрээт толь" />
       <div class="modal-info">
         <h3>Хар хүрээт толь</h3>
-        <p>Минималист хар хүрээтэй, хар саарал шилтэй орчин үеийн дизайны толь. Офис, зочид буудал, гэрт тохиромжтой.</p>
+        <p>Нарийн хар хүрээ нь саарал толин гадаргууг тодруулна. Минимал хийцтэй тул орчин үеийн, цэгцтэй интерьерийн загварт нийцнэ.</p>
         <ul>
-          <li>✦ Материал: Металл хүрээ, хар будсан</li>
-          <li>✦ Шилний төрөл: Тонированный (хар) шил</li>
-          <li>✦ Хэмжээ: Захиалгаар хийнэ</li>
-          <li>✦ Хүргэлт: Улаанбаатар хот дотор</li>
-          <li>✦ Суурилуулалт: Багаар хийнэ</li>
+          <li>✦ Харагдах өнгө: Хар хүрээ, саарал шил</li>
+          <li>✦ Загвар: Энгийн, шулуун хүрээтэй</li>
+          <li>✦ Томруулж үзэхийн тулд зургийг дарна уу</li>
         </ul>
-        <a href="#contact" class="btn-gold" onclick="closeModal(null,'modal-black')">Захиалах</a>
       </div>
     </div>
   </div>
@@ -461,18 +386,15 @@
   <div class="modal" id="modal-champ" onclick="closeModal(event, 'modal-champ')">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal(null,'modal-champ')">✕</button>
-      <img src="images/product-champagne.jpg" alt="Шампань хүрээт толь" />
+      <img src="images/mirror-champagne.jpg" alt="Шампань хүрээт толь" />
       <div class="modal-info">
         <h3>Шампань хүрээт толь</h3>
-        <p>Зөөлөн алтлаг шампань өнгийн хүрээтэй, тунгалаг шилтэй гоёмсог толь. Унтлагын өрөө, угаалгын өрөөнд тохиромжтой.</p>
+        <p>Шампань буюу цайвар алтлаг хүрээ, цайвар толин гадаргуутай зөөлөн загвар. Байгалийн өнгө давамгайлсан интерьерийн санаа болно.</p>
         <ul>
-          <li>✦ Материал: Алюмин хүрээ, шампань өнгийн</li>
-          <li>✦ Шилний төрөл: Тунгалаг шил</li>
-          <li>✦ Хэмжээ: Захиалгаар хийнэ</li>
-          <li>✦ Хүргэлт: Улаанбаатар хот дотор</li>
-          <li>✦ Суурилуулалт: Багаар хийнэ</li>
+          <li>✦ Харагдах өнгө: Шампань хүрээ, цайвар тусгал</li>
+          <li>✦ Загвар: Дөрвөлжин, нарийн хүрээтэй</li>
+          <li>✦ Томруулж үзэхийн тулд зургийг дарна уу</li>
         </ul>
-        <a href="#contact" class="btn-gold" onclick="closeModal(null,'modal-champ')">Захиалах</a>
       </div>
     </div>
   </div>
@@ -480,18 +402,15 @@
   <div class="modal" id="modal-texture" onclick="closeModal(event, 'modal-texture')">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal(null,'modal-texture')">✕</button>
-      <img src="images/product-texture.jpg" alt="Судалтай шил" />
+      <img src="images/glass-ribbed-cream.jpg" alt="Судалтай шил" />
       <div class="modal-info">
         <h3>Судалтай архитектурын шил</h3>
-        <p>Онцгой боловсруулалттай давхар судалтай гадаргуу бүхий архитектурын тусгай шил. Хана, таазны декор, хуваалтанд хэрэглэнэ.</p>
+        <p>Хөндлөн судалтай цайвар шилэн гадаргуу. Тавилга, хаалга болон таславчийн хэсэгт ашиглаж болох хээний жишээг харуулна.</p>
         <ul>
-          <li>✦ Материал: Олон давхрааны боловсруулсан шил</li>
-          <li>✦ Гадаргуу: Судалтай (ribbed/fluted) дизайн</li>
-          <li>✦ Хэмжээ: Захиалгаар хийнэ</li>
-          <li>✦ Хүргэлт: Улаанбаатар хот дотор</li>
-          <li>✦ Суурилуулалт: Багаар хийнэ</li>
+          <li>✦ Өнгө: Цайвар, бараан хувилбар</li>
+          <li>✦ Хээ: Давтагдсан хөндлөн судал</li>
+          <li>✦ Томруулж үзэхийн тулд зургийг дарна уу</li>
         </ul>
-        <a href="#contact" class="btn-gold" onclick="closeModal(null,'modal-texture')">Захиалах</a>
       </div>
     </div>
   </div>
